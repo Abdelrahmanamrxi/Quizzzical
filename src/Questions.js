@@ -12,7 +12,9 @@ export default function Questions(questions) {
         
       } else if (!answer.checked && answer.correct) {
         backgroundColor = '#6aa84f';
+     
       }
+
     }
    
     return backgroundColor;

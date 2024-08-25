@@ -3,7 +3,7 @@ import './App.css';
 import './questions.css'
 import bolb from './images/blob.png'
 import bolb2 from './images/blob2.png'
-import React from 'react'
+import React, { Suspense } from 'react'
 import Questions from './Questions';
 function App() {
   const [questions,set_questions]=React.useState([])
@@ -96,6 +96,7 @@ function Endgame() {
     </div>
     </div>
     :
+  <Suspense fallback={<h2>Loading...</h2>}>
     <div>
        <img className='bolb'  src={bolb}></img>
       
@@ -121,6 +122,7 @@ function Endgame() {
       </div>
    
     </div>
+    </Suspense>
 }
 
     </main>
