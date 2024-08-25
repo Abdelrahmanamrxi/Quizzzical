@@ -32,7 +32,7 @@ text-align: center;
 color:#293264
 
 }
-button{
+.start{
 align-items: center;
 border-radius: 7px;
 opacity: 0px;
@@ -52,10 +52,12 @@ cursor:pointer
 .bolb{
 position: absolute;
 right:0;
+top:0;
   
 }
-.bolb2{
+.bolbe2{
   position: absolute;
   left:0;
   bottom:0;
+  
 }
